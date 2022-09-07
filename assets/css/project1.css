@@ -1,0 +1,103 @@
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  height: 80vh;
+}
+.project .project-img {
+  flex: 1 1 42rem;
+}
+.project .project-img img {
+  width: 100%;
+}
+.project .project-description {
+  flex: 1 1 40rem;
+}
+.project .project-description h2 {
+  font-size: 4rem;
+  color: #838e38;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.project .project-description p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 2rem 1.5rem;
+}
+.gallery a img {
+  width: 100%;
+  cursor: pointer;
+  height: 200px;
+}
+
+.twomo-profile {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.twomo-profile h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    height: auto;
+  }
+  .project .project-img {
+    width: 100%;
+  }
+  .project .project-description {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .project {
+    flex-direction: column;
+    height: auto;
+  }
+  .project .project-img {
+    width: 100%;
+    height: 100px !important;
+    margin-bottom: 0;
+  }
+  .project .project-description {
+    width: 100%;
+    margin-top: -20rem;
+  }
+  .project .project-description h2 {
+    font-size: 2.8rem;
+  }
+  .project .project-description p {
+    font-size: 1.3rem;
+  }
+  .twomo-profile {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .twomo-profile h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+  }
+}/*# sourceMappingURL=project1.css.map */

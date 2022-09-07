@@ -1,0 +1,91 @@
+.values {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 17rem;
+  background: none;
+  height: 100vh;
+  margin-bottom: 8rem;
+}
+.values .content {
+  width: 45%;
+}
+.values .content .divider {
+  width: 100%;
+}
+.values .content .ul-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.values .content .values-list {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+.values .content .values-list li {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.values .values-images {
+  display: flex;
+  align-items: center;
+}
+.values .values-images img {
+  width: 50rem;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 1rem 7%;
+  }
+  .values .content {
+    width: 58%;
+  }
+  .values .values-images {
+    width: 40%;
+  }
+  .values .values-images img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    padding: 1rem 7rem;
+  }
+  .values {
+    margin-top: 10rem;
+    flex-direction: column-reverse;
+    margin-bottom: 50rem;
+  }
+  .values .content {
+    width: 100%;
+    margin-bottom: -10rem;
+  }
+  .values .values-images {
+    width: 100%;
+    margin-bottom: -15rem;
+  }
+  .values .values-images img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  section {
+    padding: 1rem 3rem;
+  }
+  .values {
+    margin-top: -8rem;
+    height: auto;
+    overflow-y: hidden;
+    flex-direction: column;
+  }
+  .values .values-images {
+    margin-bottom: -3rem;
+  }
+  .values .values-images img {
+    width: 300px;
+  }
+  .footer {
+    margin-top: -40rem;
+  }
+}/*# sourceMappingURL=values.css.map */

@@ -1,0 +1,101 @@
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.values {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 17rem;
+    background: none;
+    height: 100vh;
+    margin-bottom: 8rem;
+    .content {
+        width: 45%;
+        .divider {
+            width: 100%;
+        }
+        .ul-title {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .values-list {
+            margin-left: 1.5rem;
+            margin-bottom: 2rem;
+            li {
+                color: #fff;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .values-images {
+        display: flex;
+        align-items: center;
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 1rem 7%;
+    }
+    .values {
+        .content {
+            width: 58%;
+        }
+        .values-images {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 1rem 7rem;
+    }
+    .values {
+        margin-top: 10rem;
+        flex-direction: column-reverse;
+        margin-bottom: 50rem;
+        .content {
+            width: 100%;
+            margin-bottom: -10rem;
+        }
+        .values-images {
+            width: 100%;
+            margin-bottom: -15rem;
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section {
+        padding: 1rem 3rem;
+    }
+    .values {
+        margin-top: -8rem;
+        height: auto;
+        overflow-y: hidden;
+        flex-direction: column;
+        .values-images {
+            margin-bottom: -3rem;
+            img {
+                width: 300px;
+            }
+        }
+    }
+    .footer {
+        margin-top: -40rem;
+    }
+}

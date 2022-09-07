@@ -1,0 +1,110 @@
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    height: 80vh;
+    .project-img {
+        flex: 1 1 42rem;
+        img {
+            width: 100%;
+        }
+    }
+    .project-description {
+        flex: 1 1 40rem;
+        h2 {
+            font-size: 4rem;
+            color: #838e38;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 2;
+            color: #ddd;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    @include grid(23rem);
+    a {
+        img {
+            width: 100%;
+            cursor: pointer;
+            height: 200px;
+        }
+    }
+}
+
+.twomo-profile {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        height: auto;
+        .project-img {
+            width: 100%;
+        }
+        .project-description {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project {
+        flex-direction: column;
+        height: auto;
+        .project-img {
+            width: 100%;
+            height: 100px !important;
+            margin-bottom: 0;
+        }
+        .project-description {
+            width: 100%;
+            margin-top: -20rem;
+            h2 {
+                font-size: 2.8rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .twomo-profile {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+}

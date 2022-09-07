@@ -1,0 +1,143 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about-img {
+  position: relative;
+  width: 50%;
+}
+.about .about-img img {
+  width: 95%;
+}
+.about .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.about .content .divider {
+  width: 150px;
+  height: 2px;
+}
+.about .content h3 {
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #838e38;
+  text-transform: uppercase;
+}
+.about .content p {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.about .content .divider-p {
+  font-size: 1.7rem;
+}
+
+.history {
+  margin-top: 8rem;
+}
+.history .content .divider {
+  margin: 0;
+}
+.history .content p {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    margin-bottom: 7rem;
+  }
+  .about .about-img img {
+    width: 100%;
+  }
+  .history {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .history .content {
+    width: 100%;
+  }
+  .history .about-img {
+    width: 100%;
+  }
+  .history .about-img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .about .content {
+    width: 100%;
+  }
+  .about .about-img {
+    width: 100%;
+  }
+  .history {
+    margin-top: 45rem;
+  }
+  .history .history-img {
+    width: 100%;
+  }
+  .history .history-img img {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 450px) {
+  section {
+    padding: 1rem 3rem;
+  }
+  .about {
+    flex-direction: column;
+    height: auto;
+    overflow-y: hidden;
+    margin-top: -5rem;
+  }
+  .about .about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .about-img img {
+    width: 100%;
+    margin-left: -3rem;
+  }
+  .about .content {
+    text-align: left;
+    margin-top: -10rem;
+  }
+  .about .content h3 {
+    font-size: 2.5rem;
+  }
+  .about .content p {
+    font-size: 1.3rem;
+  }
+  .history {
+    height: auto;
+    overflow-y: hidden;
+    flex-direction: column;
+    margin-top: -3rem;
+  }
+  .history .content h3 {
+    font-size: 2.5rem;
+  }
+  .history .history-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+  }
+  .history .history-img img {
+    width: 380px;
+  }
+  .footer {
+    margin-top: -5rem;
+  }
+}/*# sourceMappingURL=about.css.map */
